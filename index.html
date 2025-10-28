@@ -9,17 +9,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 </head>
-<body class="relative h-screen overflow-hidden bg-cover bg-center"  style="background-image: url('https://flocus.com/aesthetic-stopwatch/resources/images/themes/b075c800cadd3c9d930f.jpg');">
+<body class="relative h-screen overflow-hidden bg-cover bg-center font-[Rubik]"  style="background-image: url('https://flocus.com/aesthetic-stopwatch/resources/images/themes/b075c800cadd3c9d930f.jpg');">
   
-  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="absolute inset-0 bg-black/50"></div>
 
-  <div class="container absolute text-white">
-    <h1>Stop watch</h1>
-    <h1>00:00</h1>
-    <h2>Current:<span>00:00</span></h2>
-    <button>Start</button>
-    <button>Lap</button>
-    <button><i class="fa-solid fa-rotate-right"></i></button>
+  <div class="container absolute z-10 flex flex-col items-center justify-center h-full text-white gap-5">
+    <h1 class="text-center absolute text-5xl top-[20%]">Stop watch</h1>
+    <h1 class="text-[200px]">00:00</h1>
+    <p class="font-extralight text-4xl absolute bottom-[39%]">Current: <span>00:00</span></p>
+    <div class="buttoncontainer font-[Rubik] flex gap-5">
+    <button class="px-8 py-2 text-2xl rounded-2xl bg-[#7432FF] ">Start</button>
+    <button class="px-5 py-2 border border-white text-2xl rounded-2xl">Lap</button>
+    <button class=" py-2 text-2xl transform rotate-[300deg]"><i class="fa-solid fa-rotate-right"></i></button>
+    </div>
+	
   </div>
 </body>
 </html>

@@ -8,7 +8,6 @@ const mainsecondhalf = document.getElementById("mainsecondhalf");
 
 let count;
 let rotation = 0;    
-
 let mainMin = 0;
 let mainSec = 0;
 function starttimer() {
@@ -35,6 +34,11 @@ function starttimer() {
 Start.addEventListener('click', () => {
     if (!count) {
         count = setInterval(starttimer, 1000);
+        Start.textContent = "Pause";
+    } else {
+        clearInterval(count);
+        count = null;
+        Start.textContent = "Start";
     }
 });
 

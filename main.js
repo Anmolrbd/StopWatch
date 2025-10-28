@@ -48,6 +48,9 @@ Stop.addEventListener('click', () => {
     mainsecondhalf.innerHTML = "00";
     mainMin = 0;
     mainSec = 0;
+    rotation += 360;
+    const btn = document.querySelector(".Stop");
+    btn.style.transform = `rotate(${rotation}deg)`;
 });
 
 Lap.addEventListener('click', () => {
